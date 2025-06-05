@@ -19,3 +19,9 @@ class Rustbrother < Formula
 
   def install
     bin.install "rustbrother"
+  end
+
+  def test
+    system "#{bin}/rustbrother", "--version"
+  end
+end
